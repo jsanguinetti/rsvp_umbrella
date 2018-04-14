@@ -1,4 +1,7 @@
 <h1>All Events</h1>
+<a href="<%= event_path(@conn, :create) %>" class="btn btn-primary">
+    Add Event
+</a>
 <div class="list-group">
     <%= for e <- @events do %>
         <a href="events/<%= e.id %>">
